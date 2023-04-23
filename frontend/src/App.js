@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/auth/login";
+import Register from "./components/auth/register";
+import Homepage from "./components/home";
+import PodcastPlay from "./components/PodcastPlay";
+import AudioPlayer from "./components/audio-player/AudioPlayer.js";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <UserAuthContextProvider> */}
+      <Router>
+        <Routes>
+          {/* <Route path="/" element={<Layout />}> */}
+          <Route path="/" element={<Homepage />} />
+          <Route path="register" element={<Register />} />
+          <Route path="login" element={<Login />} />
+          <Route path="playPodcast" element={<PodcastPlay />} />
+          {/* </Route> */}
+        </Routes>
+      </Router>
+      {/* </UserAuthContextProvider> */}
     </div>
   );
 }

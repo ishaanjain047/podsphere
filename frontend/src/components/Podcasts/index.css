@@ -1,0 +1,7 @@
+.podcastWrapper {
+  width: 100%;
+  background-color: #17171a;
+}
+.allPodcastWrapper {
+  display: flex;
+}
