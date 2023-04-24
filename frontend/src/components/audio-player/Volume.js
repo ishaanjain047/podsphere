@@ -20,7 +20,7 @@ const Volume = ({
   setTimeProgress,
   tracks,
   trackIndex,
-  setTrackIndex,
+  updateTrackIndex,
   setCurrentTrack,
   handleNext,
 }) => {

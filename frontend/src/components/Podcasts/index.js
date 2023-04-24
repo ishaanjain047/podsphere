@@ -19,7 +19,6 @@ const Podcasts = () => {
           setFilteredData={setFilteredData}
         ></Header>
       </div>
-      <div className="podcasts">All Podcasts here</div>
       <div className="allPodcastWrapper">
         {wordEntered ? (
           filteredData.map((podcast, id) => {

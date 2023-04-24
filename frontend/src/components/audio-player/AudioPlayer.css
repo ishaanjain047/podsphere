@@ -14,7 +14,14 @@
 .podcastInfo {
   color: white;
   padding: 2rem;
-  width: 25%;
+  width: 20%;
+}
+.audio-image-wrapper {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .audio-image {
   width: 100%;
@@ -32,6 +39,7 @@
   align-items: center;
 }
 .audio-title {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -69,6 +77,7 @@
 /* Volume CSS */
 
 .volumeWrapper {
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;

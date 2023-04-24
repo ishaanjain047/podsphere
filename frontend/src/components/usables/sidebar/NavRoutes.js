@@ -7,17 +7,12 @@ const SidebarFields = [
   {
     name: "Home",
     Icon: Dashboard,
-    linkTo: "dashboard",
+    linkTo: "/",
   },
   {
-    name: "Support",
-    Icon: Support,
-    linkTo: "support",
-  },
-  {
-    name: "Profile",
+    name: "My Uploads",
     Icon: User,
-    linkTo: "profile",
+    linkTo: "uploads",
   },
 ];
 

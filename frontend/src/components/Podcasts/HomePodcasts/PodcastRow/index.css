@@ -16,6 +16,11 @@
 .carouselItem {
   transition: all linear 0.4s;
 }
+.podcastRowHeading {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
 .slick-list,
 .slick-slider,
 .slick-track {

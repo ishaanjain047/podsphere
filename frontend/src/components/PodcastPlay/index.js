@@ -5,6 +5,7 @@ import PodcastCard from "../Podcasts/PodcastCard";
 import HomePodcasts from "../Podcasts/HomePodcasts";
 import Player from "../audio-player/AudioPlayer.js";
 import { useSelector } from "react-redux";
+import "./index.css";
 // for reducers
 import { useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -30,31 +31,33 @@ const PodcastPlay = () => {
     console.log(trackIndex);
   };
   return (
-    <div className="podcastWrapper">
+    <div className="podcastPlayWrapper">
       {" "}
-      <div className="audio-info">
-        <div className="audio-image-wrapper">
-          {currentTrack.thumbnail ? (
-            <img
-              className="audio-image"
-              src={currentTrack.thumbnail}
-              alt="audio avatar"
-            />
-          ) : (
-            <div className="icon-wrapper">
-              <span className="audio-icon">
-                <BsMusicNoteBeamed />
-              </span>
-            </div>
-          )}
-        </div>
-        <div className="audio-text">
-          <div className="audio-title">{currentTrack.title}</div>
-          <div className="audio-author">{currentTrack.author}</div>
-          <button onClick={playSong}>Play new song</button>
+      <div className="podcastInformation">
+        <div className="audioInfo">
+          <div className="audio-image-wrapper">
+            {currentTrack.thumbnail ? (
+              <img
+                className="audio-image"
+                src={currentTrack.thumbnail}
+                alt="audio avatar"
+              />
+            ) : (
+              <div className="icon-wrapper">
+                <span className="audio-icon">
+                  <BsMusicNoteBeamed />
+                </span>
+              </div>
+            )}
+          </div>
+          <div className="audio-text">
+            <div className="audio-title">{currentTrack.title}</div>
+            <div className="audio-author">{currentTrack.author}</div>
+            <button onClick={playSong}>Play new song</button>
+          </div>
         </div>
       </div>
-      <div className="homeFooter">
+      <div className="playerFooter">
         <Player></Player>
       </div>
     </div>

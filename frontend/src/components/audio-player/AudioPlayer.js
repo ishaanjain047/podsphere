@@ -77,7 +77,7 @@ const AudioPlayer = () => {
           handleNext,
         }}
       />
-      {/* <Volume
+      <Volume
         {...{
           audioRef,
           progressBarRef,
@@ -86,11 +86,11 @@ const AudioPlayer = () => {
           setTimeProgress,
           tracks,
           trackIndex,
-          setTrackIndex,
+          updateTrackIndex,
           setCurrentTrack,
           handleNext,
         }}
-      ></Volume> */}
+      ></Volume>
     </div>
   );
 };
