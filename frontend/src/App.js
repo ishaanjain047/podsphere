@@ -4,13 +4,14 @@ import Login from "./components/auth/login";
 import Homepage from "./components/home";
 import PodcastPlay from "./components/PodcastPlay";
 import AudioPlayer from "./components/audio-player/AudioPlayer.js";
+import UploadForm from "./components/uploadForm";
 function App() {
   return (
     <div>
       {/* <UserAuthContextProvider> */}
       <Router>
         <Routes>
-          {/* <Route path="/" element={<Layout />}> */}
+          <Route path="/upload" element={<UploadForm />} />
           <Route path="/" element={<Homepage />} />
           {/* <Route path="register" element={<Register />} /> */}
           <Route path="login" element={<Login />} />
